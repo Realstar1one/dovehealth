@@ -1,0 +1,143 @@
+---
+// Dove Star Health - Home Page
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dove Star Health</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        color: #1a1a2e;
+        line-height: 1.6;
+      }
+      header {
+        background: linear-gradient(135deg, #0a6e7c, #14b8a6);
+        color: white;
+        padding: 1.5rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo { font-size: 1.5rem; font-weight: 700; }
+      nav a {
+        color: white;
+        text-decoration: none;
+        margin-left: 1.5rem;
+        font-size: 0.95rem;
+      }
+      nav a:hover { text-decoration: underline; }
+      .hero {
+        background: linear-gradient(135deg, #0a6e7c, #14b8a6);
+        color: white;
+        text-align: center;
+        padding: 5rem 2rem;
+      }
+      .hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+      .hero p { font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem; }
+      .btn {
+        display: inline-block;
+        background: white;
+        color: #0a6e7c;
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: transform 0.2s;
+      }
+      .btn:hover { transform: scale(1.05); }
+      .section {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 4rem 2rem;
+      }
+      .section h2 {
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #0a6e7c;
+      }
+      .features {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+      }
+      .feature {
+        text-align: center;
+        padding: 2rem;
+        border-radius: 12px;
+        background: #f0fdfa;
+      }
+      .feature h3 { color: #0a6e7c; margin-bottom: 0.5rem; }
+      .feature p { color: #555; font-size: 0.95rem; }
+      footer {
+        background: #1a1a2e;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.9rem;
+      }
+      @media (max-width: 600px) {
+        .hero h1 { font-size: 2rem; }
+        nav { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🕊️ Dove Star Health</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h1>Your Health, Our Priority</h1>
+      <p>Compassionate, personalized care for you and your loved ones. Building healthier lives, one step at a time.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About Us</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto; font-size: 1.1rem; color: #555;">
+        Dove Star Health is dedicated to providing quality healthcare with a personal touch.
+        We believe everyone deserves access to compassionate, professional care that puts their needs first.
+      </p>
+    </section>
+
+    <section class="section" id="services">
+      <h2>Our Services</h2>
+      <div class="features">
+        <div class="feature">
+          <h3>General Care</h3>
+          <p>Comprehensive health check-ups and ongoing wellness support.</p>
+        </div>
+        <div class="feature">
+          <h3>Preventive Health</h3>
+          <p>Screenings and guidance to keep you healthy and ahead of issues.</p>
+        </div>
+        <div class="feature">
+          <h3>Personalized Plans</h3>
+          <p>Tailored health plans designed around your unique needs and goals.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact Us</h2>
+      <p style="text-align: center; font-size: 1.1rem; color: #555;">
+        Email: info@dovestarhealth.com<br />
+        We're here to help you on your health journey.
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 Dove Star Health. All rights reserved.
+    </footer>
+  </body>
+</html>
